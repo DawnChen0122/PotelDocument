@@ -13,8 +13,9 @@ values(1,1,1,'2025-01-15','2025-01-18',5000,1),
 (1,2,4,'2025-01-15','2025-01-18',5000,4);
 
 insert into roomtype(ROOMTYPEID,DESCPT,IMAGEID,PRICE,PETTYPE,WEIGHTL,WEIGHTH)
-VALUES(1,'海景房',1,1000,'D',5,8),
-(2,'山景房',2,2000,'C',null,null);
+VALUES(1,'海景房',2,1000,'D',5,8),
+(2,'山景房',1,2000,'C',null,null);
+
 
 insert into room(ROOMID,ROOMTYPEID)
 values(1,1),
@@ -24,7 +25,11 @@ values(1,1),
 
 insert into images(IMAGEDATA)
 values(x'1234'), -- 1. roomtype 海景房
-(x'1234'); -- 2.roomtype 山景房
+(x'1234'), -- 2.roomtype 山景房
+(x'1234'), -- 3.pet狗
+(x'1234'); -- 4.pet貓
+
+
 
 insert into pets(PETID,PETTYPE,NICKNAME,WEIGHT)
  values(1,'D','小黑',3.5)
@@ -32,14 +37,3 @@ insert into pets(PETID,PETTYPE,NICKNAME,WEIGHT)
  ,(3,'D','大白',8)
  ,(4,'C','喵喵',2);
  
- CREATE TABLE IF NOT EXISTS PETS(
-	PETID		INT				NOT NULL,
-	PETTYPE		CHAR(1)			NOT NULL DEFAULT 'D',
-	NICKNAME	VARCHAR(20)		NOT NULL,
-	WEIGHT		DECIMAL(5,1)	NOT NULL,
-	BREED		VARCHAR(15)		,
-	IMAGEID		INT				,
-	STATUS		CHAR(1)			NOT NULL DEFAULT '1',
-	CREATEDATE	DATETIME		NOT NULL DEFAULT CURRENT_TIMESTAMP,
-	MODIFYDATE  DATETIME
-);
