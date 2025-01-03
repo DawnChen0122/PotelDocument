@@ -37,3 +37,10 @@ insert into pets(PETID,PETTYPE,NICKNAME,WEIGHT)
  ,(3,'D','大白',8)
  ,(4,'C','喵喵',2);
  
+insert into PRDORDERS(MEMBERID,AMOUNT,STATUS)
+values(3,500,'2')
+,(5,750,'2');
+
+insert into PRDORDITEMS(PRDORDERID,PRDID,PRDCOUNT)
+values(1,0,1)
+,(2,0,2);
