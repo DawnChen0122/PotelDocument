@@ -1,9 +1,9 @@
 insert into members(NAME,CELLPHONE,ADDRESS,GENDER,EMAIL,PASSWD)
- values('Dawn','0911123457','104台北市中山區南京東路三段219號4F','F','dawn@gmail.com',x'e9cee71ab932fde863338d08be4de9dfe39ea049bdafb342ce659ec5450b69ae'),
- ('Jim','0911123458','104台北市中山區南京東路三段219號4F','M','jim@gmail.com',x'e9cee71ab932fde863338d08be4de9dfe39ea049bdafb342ce659ec5450b69ae'),
- ('Riley','0911123459','104台北市中山區南京東路三段219號4F','F','riley@gmail.com',x'e9cee71ab932fde863338d08be4de9dfe39ea049bdafb342ce659ec5450b69ae'),
- ('Sen','0911123460','104台北市中山區南京東路三段219號4F','M','sen@gmail.com',x'e9cee71ab932fde863338d08be4de9dfe39ea049bdafb342ce659ec5450b69ae'),
- ('Kent','0911123461','104台北市中山區南京東路三段219號4F','M','kent@gmail.com',x'e9cee71ab932fde863338d08be4de9dfe39ea049bdafb342ce659ec5450b69ae');
+ values('Dawn','0911123457','104台北市中山區南京東路三段219號4F','F','dawn@gmail.com','abcd1234'),
+ ('Jim','0911123458','104台北市中山區南京東路三段219號4F','M','jim@gmail.com','abcd1234'),
+ ('Riley','0911123459','104台北市中山區南京東路三段219號4F','F','riley@gmail.com','abcd1234'),
+ ('Sen','0911123460','104台北市中山區南京東路三段219號4F','M','sen@gmail.com','abcd1234'),
+ ('Kent','0911123461','104台北市中山區南京東路三段219號4F','M','kent@gmail.com','abcd1234');
 
 
 insert into orders(MEMBERID,ROOMTYPEID,ROOMID,EXPDATES,EXPDATEE,AMOUNT,PETID)
